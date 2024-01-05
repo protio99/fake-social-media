@@ -1,0 +1,11 @@
+{
+  "name": "fakesocialmedia",
+  "version": "1.0.0",
+  "description": "Fake social media using Json Place Holder and FETCH API ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniela Correa",
+  "license": "ISC"
+}

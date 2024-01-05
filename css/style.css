@@ -1,0 +1,84 @@
+.app {
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'menu main';
+}
+
+.content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    grid-area: main;
+}
+
+.navbar{
+    grid-area: header;
+}
+
+.content__header__title {
+    display: flex;
+}
+
+.content__header__title > * {
+    margin: 0 .3rem;
+}
+
+.logo { 
+    width: 2rem;
+}
+
+.content__header__title h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#display-posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.display-posts__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.display-posts__card__header {
+    display: flex;
+    gap: 1rem;
+}
+.display-posts__card__thumb {
+    width: 3.5rem;
+    border-radius: 50%;
+    box-shadow: 2px 8px 16px -7px rgba(66, 68, 90, 1);
+}
+
+.display-posts__card__user-data {
+    font-size: .8rem;
+    text-transform: lowercase;
+    margin-block: auto;
+}
+
+.display-posts__card__title {
+    font-size: 1rem;
+}
+
+.display-posts__card__title::first-letter {
+    text-transform: uppercase;
+}
+
+.display-posts__card__description {
+    font-size: .8rem;
+}
+
+aside {
+    grid-area: menu;
+    background-color: gainsboro;
+    width: 4rem;
+}

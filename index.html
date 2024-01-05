@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Fake social media</title>
+</head>
+<body>
+    <div class="app">
+        <nav id="navbar" class="navbar">
+            <div id="navbar__main" class="navbar__main">
+                <div class="navbar__main__menu">
+                    <img class="logo" src="./assets/social-media.png" alt="logo">
+                    <div class="navbar__main__menu__btns">
+                        <ul class="menu menu--row">
+                            <li class="manu__item menu__item--row">Home</li>
+                            <li class="manu__item menu__item--row">About</li>
+                            <li class="manu__item menu__item--row">Services</li>
+                            <li class="manu__item menu__item--row">Features</li>
+                        </ul>
+                    </div>
+                </div>
+                <form class="navbar__actions">
+                    <img class="navbar__actions__search-icon" src="./assets/search.png" alt="search-icon">
+                    <input class="search-bar search-bar--xs search-bar--inactive" type="text" name="search" id="search" placeholder="Search...">
+                    <button class="btn navbar__actions__sigin" type="button">Sign in</button>
+                    <img id="open-menu" class="menu__btn inactive menu__btn--active" src="./assets/menu.png" alt="menu">
+                    <img id="close-menu" class="menu__btn inactive" src="./assets/menu-open.png" alt="menu">
+                </form>
+            </div>
+            <div id="navbar__search-bar" class="inactive">
+                <input class="search-bar search-bar--xl" type="text" name="search" id="search" placeholder="Search...">
+                <img class="navbar__search-box__close" src="./assets/x-mark.png" alt="close">
+            </div>
+            <div id="navbar__toggle-menu" class="inactive">
+                <div class="navbar__toggle-menu__card">
+                    <ul class="menu menu--column">
+                        <li class="manu__item menu__item--column">Home</li>
+                        <li class="manu__item menu__item--column">About</li>
+                        <li class="manu__item menu__item--column">Services</li>
+                        <li class="manu__item menu__item--column">Features</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <aside>
+            <div>
+                <p>Category 1</p>
+                <ul>
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                    <li>Element 3</li>
+        
+                </ul>
+            </div>
+            <div>
+                <p>Category 2</p>
+            </div>
+        </aside>  
+        <div class="content">
+            <div class="content__header">
+                <div class="content__header__title">
+                    <img src="./assets/social-media.png" class="logo" alt="" srcset="">
+                    <h1>Social media</h1>
+                </div>
+                <p>Check what people is saying</p>
+            </div>
+            
+            <div id="display-posts" onclick="openComments()"></div>
+        
+        </div> 
+    </div class="app">
+    <script src="./js/index.js"></script>
+    <script src="./js/navbar.js"></script>    
+</body>
+</html>
